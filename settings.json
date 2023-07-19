@@ -26,4 +26,9 @@
     "workbench.colorTheme": "Default Dark+",
     "workbench.startupEditor": "none",
     "window.zoomLevel": 1,
+
+    // Indentation
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
 }
