@@ -22,3 +22,37 @@
 #    - False
 
 # INSERT CODE HERE
+
+
+class ShoppingList(object):
+    def __init__(self,
+                 shopping_list: list[str] = ['apples', 'milk', 'bread',
+                                             'carrot', 'pasta']):
+        self.shopping_list = shopping_list
+
+    def in_list(self, item: str) -> str:
+        if item in self.shopping_list:
+            return f"'{item}' is in the shopping list."
+        else:
+            return f"'{item}' is not in the shopping list."
+
+    def __str__(self) -> str:
+        return f"My shopping list: {self.shopping_list}"
+
+    def __eq__(self, other) -> bool:
+        if type(self) != type(other):
+            return False
+        return self.shopping_list == other.shopping_list
+
+
+monday: ShoppingList = ShoppingList()
+print("##### Monday #####")
+print(monday)
+print(monday.in_list("milk"))
+print(monday.in_list("banana"))
+
+print("##### Tuesday #####")
+tuesday: ShoppingList = ShoppingList(["banana", "apple"])
+print(tuesday)
+print(tuesday.in_list("milk"))
+print(tuesday.in_list("banana"))
