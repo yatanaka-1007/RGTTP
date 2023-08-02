@@ -7,7 +7,7 @@
 #    Then, print the sentence using the elements with .format()
 
 # INSERT YOUR CODE HERE
-person: list = ["John", 28, "Engineer"]
+person: list = ["John", 80, "Engineer"]
 print("name: {0[0]}\nage: {0[1]}\noccupation: {0[2]}".format(person))
 
 # 2. The dictionary should contain keys such as
