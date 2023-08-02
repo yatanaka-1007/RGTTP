@@ -36,7 +36,7 @@ class ShoppingList(object):
         else:
             return f"'{item}' is not in the shopping list."
         # IMO, I prefer only returning True/False on this method.
-        # I think it's better to generate the str value on the 
+        # I think it's better to generate the str value on the
         # caller side, not in this method
 
     def __str__(self) -> str:
